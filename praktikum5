@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.latian1_prak5;
+
+/**
+ *
+ * @author Kevin
+ */
+import java.util.Scanner;
+public class Latian1_prak5 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int data;
+        int sum = 0;
+
+        System.out.print("Masukkan Jumlah Data: ");
+        data = input.nextInt();
+
+        int[] angka = new int[data];
+
+        for (int i = 0; i < angka.length; i++) {
+            System.out.print("Masukkan Angka ke-"+(i+1)+": ");
+            angka[i] = input.nextInt();
+        }
+
+        System.out.println("Isi array: ");
+        for (int i = 0; i < angka.length; i++) {
+            System.out.print(angka[i]+", ");
+            sum = sum + angka[i];
+        }
+        System.out.println("Jumlah angka = "+sum);
+    }
+}
